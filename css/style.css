@@ -31,6 +31,9 @@ body{
      font-size: 22px;
     font-weight: 400;
 }
+.color-1{
+    color: #FFFFFF;
+}
 
 /* common css end */
 
@@ -68,7 +71,7 @@ header{
     color: #8987A1;
 }
 /* responsiveness*/
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px){
     .link-right{
         visibility: hidden;
     }
@@ -108,7 +111,7 @@ header{
     width: 100%;
 }
 /* responsiveness */
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px){
     .banner{
         flex-direction: column-reverse;
     }
@@ -125,7 +128,7 @@ header{
     text-align: center;
     margin-bottom: 50px;
 }
-.our-plants-top h2{
+.our-plants-top h2, .latest-deals-title{
     font-size: 50px;
     font-weight: 700;
 }
@@ -160,7 +163,7 @@ header{
     height: 50px;
 }
 /* responsiveness */
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px){
 .our-plants-bottom{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -206,7 +209,7 @@ header{
     left: 34%;
 }
 /* responsivness */
-@media screen and (max-width:576px){
+@media screen and (max-width: 576px){
     .flower-lover{
        flex-direction: column;
     }
@@ -215,3 +218,66 @@ header{
     }
 }
 /* flower lover end */
+/* latest deals start */
+.latest-deals{
+    text-align: center;
+    margin: 125px 0;
+}
+/* latest deals end */
+/* card layout start */
+.card-layout{
+    margin: auto;
+    height: auto;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+/* .card-layout-left{
+    width: 336px;
+    height: 206px;
+} */
+.card-layout-left-1, .card-layout-left-2, .card-layout-right{
+   position: relative; 
+}
+.card-layout-left-1, .card-layout-left-2{
+    width: 366px;
+    height: 206px;
+}
+.card-layout-left-1 img, .card-layout-left-2 img, .card-layout-right img{
+    width: 100%;
+    border-radius: 14px;
+}
+
+.text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.text-center h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+.w-margin{
+    margin-bottom: 20px;
+}
+.card-layout-right{
+    width: 753px;
+    height: 423px;
+}
+/* responsivness */
+@media screen and (max-width: 576px){
+    .card-layout{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .card-layout-right{
+     width: 366px;
+    height: 206px;
+}
+
+}
+/* card layout end */
