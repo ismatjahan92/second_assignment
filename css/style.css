@@ -283,64 +283,81 @@ header{
 /* card layout end */
 /* join start */
 .join{
-    position: relative;
-}
-.join-img{
-    height: 533px;
-}
-.join-img img{
+    background-image: url("../assets/news-letter-bg.png");
     width: 100%;
-}
-.join-center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
+    height: 533px;
+    text-align: center;
+    padding-top: 180px;
+    
 }
 .join-center-title{
-    text-align: center;
+    color: #FFFFFF;
 }
-.join-center-id{
-    width: auto;
+.join-center{
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 23px 0;
 }
-.join-center-input{
+.join-input{
     width: 644px;
     height: 50px;
     background-color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
     color: rgba(0, 0, 0, 0.46);
     padding-left: 30px;
-    
 }
-.join-center-btn{
-    background-color:  #E95A08;
-     width: 186px;
+.join-btn{
+    width: 186px;
     height: 50px;
+    background-color: #E95A08;
+    color: #FFFFFF;
 }
 /* responsiveness */
-@media screen and (max-width:576px){
-    .join{
-        max-width: 576px;
-    position: relative;
+@media screen and (max-width: 576px) {
+    .join-input, .join-btn{
+        width: 100%;
+    
+    } 
 }
-     .join-img img{
-    width: 100%;
-} 
-     .join-center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-}
-}
-
-
-
 
 /* join end */
+/* footer start */
+footer{
+    margin: 50px;
+}
+.last{
+    height: auto;
+    margin: auto;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-left{
+    width: 290px;
+    height: 179px;
+}
+.footer-left-img{
+    width: 135px;
+    height: 82px;
+}
+.footer-left-img img{
+    width: 100%;
+}
+.footer-center-1 ul li, .footer-center-2 ul li{
+    margin-bottom: 30px;
+}
+
+.footer-right{
+    display: flex;
+    gap: 20px;
+}
+/* responsiveness */
+@media screen and (max-width: 576px){
+    .last{
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* footer end */
