@@ -128,7 +128,7 @@ header{
     text-align: center;
     margin-bottom: 50px;
 }
-.our-plants-top h2, .latest-deals-title{
+.our-plants-top h2, .latest-deals-title, .join-center-title{
     font-size: 50px;
     font-weight: 700;
 }
@@ -281,3 +281,66 @@ header{
 
 }
 /* card layout end */
+/* join start */
+.join{
+    position: relative;
+}
+.join-img{
+    height: 533px;
+}
+.join-img img{
+    width: 100%;
+}
+.join-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+.join-center-title{
+    text-align: center;
+}
+.join-center-id{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.join-center-input{
+    width: 644px;
+    height: 50px;
+    background-color: #FFFFFF;
+    color: rgba(0, 0, 0, 0.46);
+    padding-left: 30px;
+    
+}
+.join-center-btn{
+    background-color:  #E95A08;
+     width: 186px;
+    height: 50px;
+}
+/* responsiveness */
+@media screen and (max-width:576px){
+    .join{
+        max-width: 576px;
+    position: relative;
+}
+     .join-img img{
+    width: 100%;
+} 
+     .join-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+
+
+/* join end */
