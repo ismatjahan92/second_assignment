@@ -6,7 +6,7 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
-    "wdth" 100;
+    "width" 100;
 }
 /* inter */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
@@ -167,3 +167,32 @@ header{
 }
 }
 /* Our plants end */
+/* flower lover start */
+.flower-lover{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 211px;
+     align-items: center;
+}
+.flower-lover-left{
+    width: 540px;
+    height: 597px;
+}
+.flower-lover-left img{
+    width: 100%;
+}
+.flower-lover-right{
+    width: 540px;
+    height: 518px;
+}
+.flower-lover-right h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.flower-lover-right ul li{
+     margin: 20px 0;
+}
+/* flower lover end */
